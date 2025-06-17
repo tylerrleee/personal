@@ -1,0 +1,21 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => (
+  <nav
+    className="text-gray-900 p-4 flex items-center justify-between w-full top-0 left-0 z-50 shadow-md"
+    style={{ backgroundColor: '#FFF6BA' }}
+  >
+    <Link to="/" className="text-xl font-bold hover:text-blue-500 transition">
+      Tyler Le
+    </Link>
+    <div className="space-x-6">
+      <Link to="/about" className="hover:text-blue-500 transition">ABOUT</Link>
+      <Link to="/portfolio" className="hover:text-blue-500 transition">PROJECTS</Link>
+      <Link to="/leadership" className="hover:text-blue-500 transition">LEADING</Link>
+      <Link to="/contact" className="hover:text-blue-500 transition">CONTACT</Link>
+    </div>
+  </nav>
+);
+
+export default Navbar;

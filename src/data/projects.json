@@ -1,0 +1,20 @@
+[
+  {
+    "title": "D3 Bar Chart",
+    "description": "A simple bar chart built with D3.js.",
+    "image": "/images/bar-chart.png",
+    "link": "https://github.com/your-repo/bar-chart"
+  },
+  {
+    "title": "React Weather App",
+    "description": "A weather app built with React and OpenWeatherMap API.",
+    "image": "/images/weather-app.png",
+    "link": "https://github.com/your-repo/weather-app"
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "My personal portfolio website built with React and Tailwind CSS.",
+    "image": "/images/portfolio.png",
+    "link": "https://github.com/your-repo/portfolio"
+  }
+]
