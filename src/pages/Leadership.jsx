@@ -1,5 +1,5 @@
 import React from 'react';
-import vsoImg from '../assets/vso.png'; // Example image for Vietnamese Student Organization
+import vsoImg from '../assets/vso.jpg'; // Example image for Vietnamese Student Organization
 // import ufImg from '../assets/uf.jpg';   // Example image for UF
 
 const leadershipRoles = [
