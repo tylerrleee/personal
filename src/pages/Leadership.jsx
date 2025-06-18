@@ -1,5 +1,5 @@
 import React from 'react';
-import vsoImg from '../assets/vso.jpg'; // Example image for Vietnamese Student Organization
+import vsoImg from '../assets/vso.png'; // Example image for Vietnamese Student Organization
 // import ufImg from '../assets/uf.jpg';   // Example image for UF
 
 const leadershipRoles = [
@@ -22,7 +22,7 @@ const leadershipRoles = [
 
 const Leadership = () => (
   <section className="max-w-3xl mx-auto py-20 px-4">
-    <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">INSERT HERE**</h2>
+    <h2 className="text-3xl font-bold mb-4 text-center text-gray-800"></h2>
     <div className="space-y-6">
       {leadershipRoles.map((role, idx) => (
         <div 
