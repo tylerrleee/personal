@@ -1,32 +1,38 @@
-import React from 'react';
 
-const ProjectCard = ({ title, description, image, link }) => (
-  <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-    {image && (
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-48 object-cover"
-      />
-    )}
-    <div className="p-4 flex flex-col flex-1">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-700 mb-4 flex-1">{description}</p>
-      <div className="flex justify-center">
-        {link && (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-          >
-            View Project
-          </a>
-        )}
+import React, { useState } from 'react';
+
+const ProjectCard = ({ title, description, image, link }) => {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <div
+        className="relative bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-72 cursor-pointer"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+        <div
+          className={`absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center px-4 transition-opacity duration-300 ${
+            hovered ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+          <p className="text-gray-200">{description}</p>
+        </div>
       </div>
-    </div>
-  </div>
-);
+    </a>
+  );
+};
 
 export default ProjectCard;
 

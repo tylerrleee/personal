@@ -5,7 +5,7 @@ import githubLogo from '../assets/github_logo.png';
 
 const Contact = () => (
   <section className="min-h-screen flex flex-col justify-center items-center" style={{ background: '#FAF9F6' }}>
-    <h2 className="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+    <h2 className="text-3xl  text-blue-800 font-bold mb-8 text-center">Contact Me!</h2>
     <div className="flex flex-col items-start space-y-6">
       <a
         href="https://www.linkedin.com/in/tylerle-uf/"

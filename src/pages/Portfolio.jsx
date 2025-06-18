@@ -1,20 +1,34 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import nycsales from '../assets/nycproportion.png';
+import BSImage from '../assets/blackscholesimage.png';
 
 const projects = [
   {
-    title: "D3 Bar Chart",
-    description: "A simple bar chart built with D3.js.",
-    image: "/images/bar-chart.png",
-    link: "https://github.com/your-repo/bar-chart"
+    title: "Black-Scholes Model Dashboard",
+    description: "Interactive dashboard for European options valuation using Python, Streamlit, and MySQL. Users can simulate call/put pricing under varying conditions with real-time ticker API, and visualize results with heatmaps and P/L surfaces.",
+    image: BSImage, // You can add a relevant screenshot
+    link: "https://tleblackschole.streamlit.app/"
   },
   {
-    title: "React Weather App",
-    description: "A weather app built with React and OpenWeatherMap API.",
-    image: "/images/weather-app.png",
-    link: "https://github.com/your-repo/weather-app"
+    title: "Investigating NYC Property Sales",
+    description: "R-based ETL and visualization workflow on New York City’s annualized property sales. Built spatial pipelines, performed trend analysis, and visualized price disparities across boroughs using ggplot2 and plotly.",
+    image: nycsales, // Add your own screenshot or placeholder
+    link: "https://github.com/tylerrleee/NYCsales"
   },
-  // Add more projects as needed
+  {
+    title: "Tracking Ticks Across a Changing Climate",
+    description: "Time-series and geospatial analysis of tick population and climate trends using NEON data. Revealed environmental drivers and regional population surges, informing public health interventions.",
+    image: "/images/ticks-tracking.png", // Add screenshot
+    link: "https://github.com/tylerrleee/TicksTracking"
+  },
+  {
+    title: "Duolingo User Accuracy Algorithm",
+    description: "C++ pipeline for parsing and ranking 30,000+ Duolingo vocabulary words by user accuracy. Implemented and benchmarked custom quick sort and shell sort algorithms across four languages.",
+    image: "/images/duolingo-algo.png", // Add screenshot
+    link: "https://github.com/jakelig03/project3-duolingo"
+  },
+  // You can add leadership projects or visualizations here as well
 ];
 
 const Portfolio = () => (
@@ -29,12 +43,3 @@ const Portfolio = () => (
 );
 
 export default Portfolio;
-
-/*
-How it works:
-
-Imports your ProjectCard component.
-Defines a projects array with project details.
-Maps over the array to render a ProjectCard for each project.
-You can customize the projects array with your own projects and images. Make sure the image paths are correct or use external URLs.
-*/

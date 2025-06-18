@@ -21,8 +21,8 @@ const leadershipRoles = [
 ];
 
 const Leadership = () => (
-  <section className="max-w-3xl mx-auto py-12 px-4">
-    <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">INSERT HERE**</h2>
+  <section className="max-w-3xl mx-auto py-20 px-4">
+    <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">INSERT HERE**</h2>
     <div className="space-y-6">
       {leadershipRoles.map((role, idx) => (
         <div 
