@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tylerrleee.github.io/personal/",
+  "homepage": "https://tylerrleee.github.io/personal",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
