@@ -10,7 +10,7 @@ const leadershipRoles = [
     title: "Marketing Analyst",
     organization: "Blockchain Association Singapore",
     period: "May 2024 - Aug 2024",
-    description: "",
+    description: "Built a reusable Python/Selenium scraper that captured C-suite contact data for 120+ blockchain & fintech firms, expanding the BAS outreach list by 3× in two weeks.\n Designed ETL workflows (BeautifulSoup → Pandas → BigQuery) to track quarterly funding, VC activity, and regulatory updates across 60 Singapore-registered fintechs; insights fed directly into BAS policy briefs. \n Equipped the Partnerships team with real-time analytics, shortening due-diligence cycles by 40 % and informing new collaborations with Acentrik (Mercedes-Benz) ",
     image: bas,
     link: 'https://www.linkedin.com/in/tylerle-uf/recent-activity/all/'
   },
@@ -18,7 +18,7 @@ const leadershipRoles = [
     title: "President",
     organization: "Vietnamese Student Organization",
     period: "2023 - Present",
-    description: "I run a student organization, 800+ add members, 100+ active members. I manage a team of 20+ officers, organize events, and lead initiatives to promote data science education and community engagement.",
+    description: "I collaborate with a team of 20+ officers, managing over $40k+ annual budget, and donate our profit to a chosen philanthropy every year. Last year, we donated $3,200 to the Vietnam Health Clinics,\n We organize social events, host professional workshops, and educate Vietnamese culture for our 100+ active members. Our biggest endeavor is hosting a Mid Autuum and Lunar New Year show every year, which attracts 820+ confirmed attendees. ",
     image: vsoImg,
     link: 'https://www.instagram.com/ufvso/'
   },
