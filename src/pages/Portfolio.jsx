@@ -16,11 +16,12 @@ const projects = [
     img: BSImage,
     link: 'https://tleblackschole.streamlit.app/',
     title: 'Black-Scholes Model Dashboard',
-    dateRange: 'June 2025 – present',
+    dateRange: 'Jun 2025 – present',
     skills: [
-      { name: 'Python',    color: 'bg-yellow-600' },
-      { name: 'Streamlit', color: 'bg-red-500'   },
+      { name: 'Python',    color: 'bg-red-500' },
+      { name: 'Plotly', color: 'bg-pink-400'   },
       { name: 'MySQL',     color: 'bg-blue-700'  },
+      { name: 'matplotlib',   color: 'bg-green-400' },
       { name: 'Finance',   color: 'bg-green-600' }
     ],
     description:
@@ -34,7 +35,7 @@ const projects = [
     skills: [
       { name: 'R',        color: 'bg-sky-600'   },
       { name: 'ggplot2',  color: 'bg-pink-600'  },
-      { name: 'Plotly',   color: 'bg-cyan-600'  },
+      { name: 'Plotly',   color: 'bg-pink-400'  },
       { name: 'ETL',      color: 'bg-amber-600' }
     ],
     description:
@@ -44,11 +45,11 @@ const projects = [
     img: ticks,
     link: 'https://github.com/tylerrleee/TicksTracking',
     title: 'Tracking Ticks Across a Changing Climate',
-    dateRange: 'Feb 2025 – Apr 2025',
+    dateRange: 'Feb – Apr 2025',
     skills: [
-      { name: 'Python',   color: 'bg-yellow-600' },
+      { name: 'Python',   color: 'bg-red-500' },
       { name: 'Pandas',   color: 'bg-emerald-600'},
-      { name: 'GeoPandas',color: 'bg-teal-600'   },
+      { name: 'seaborn',color: 'bg-teal-600'   },
       { name: 'Time-Series', color: 'bg-indigo-600'}
     ],
     description:
@@ -58,7 +59,7 @@ const projects = [
     img: duo,
     link: 'https://github.com/jakelig03/project3-duolingo',
     title: 'Duolingo User Accuracy Algorithm',
-    dateRange: 'Nov 2024',
+    dateRange: 'Nov - Dec 2024',
     skills: [
       { name: 'C++',      color: 'bg-blue-600'  },
       { name: 'Algorithms', color: 'bg-purple-600' },
@@ -71,11 +72,11 @@ const projects = [
     img: sgflat,
     link: 'https://github.com/tylerrleee/SingaporeFlatsPrice-R',
     title: 'Predicting Resale HDB Prices (Singapore)',
-    dateRange: 'Mar 2025',
+    dateRange: 'Nov - Dec 2024',
     skills: [
       { name: 'R',        color: 'bg-sky-600'   },
-      { name: 'Regression', color: 'bg-lime-600'},
-      { name: 'Data Science', color: 'bg-green-600'}
+      { name: 'ggplot2',       color: 'bg-orange-600'},
+      { name: 'Regression',      color: 'bg-cyan-600'  }
     ],
     description:
       'Explores how proximity to expressways and floor level influence resale prices of Singapore HDB flats; built predictive models & visual dashboards.'
@@ -84,11 +85,11 @@ const projects = [
     img: diabetes,
     link: 'https://github.com/tylerrleee/DiabetesModel-R-',
     title: 'Predicting Diabetes',
-    dateRange: 'Jan 2025',
+    dateRange: 'Nov - Dec 2024',
     skills: [
       { name: 'R',        color: 'bg-sky-600'   },
-      { name: 'ML',       color: 'bg-orange-600'},
-      { name: 'EDA',      color: 'bg-cyan-600'  }
+      { name: 'ggplot2',       color: 'bg-orange-600'},
+      { name: 'Regression',      color: 'bg-cyan-600'  }
     ],
     description:
       'Analysed BMI, age & plasma glucose concentration to predict diabetes onset. Derived interpretable patterns and validated logistic-regression models.'
@@ -97,9 +98,10 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section className="max-w-6xl mx-auto py-24 px-4">
+    <section className="min-h-screen flex flex-col justify-center items-center "
+    style={{ background: '#FAF9F6' }}>
       <h2 className="text-3xl font-bold mb-8 text-center text-blue-600">
-        My Projects
+        My Data Projects
       </h2>
 
       {/* responsive masonry-like grid */}

@@ -74,7 +74,9 @@ export default function ProjectCard({
         {/* read-more button appears only if text was clamped */}
         <button
           onClick={toggle}
-          className="self-start mt-auto text-sm font-semibold underline underline-offset-2 hover:opacity-80"
+          className="self-end mt-auto text-sm font-semibold underline underline-offset-2 hover:opacity-80 bg-transparent shadow-none"
+            style={{ background: 'none' }}
+
         >
           {expanded ? 'Show Less' : 'Read More'}
         </button>

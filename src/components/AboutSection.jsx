@@ -14,10 +14,10 @@ const AboutSection = () => (
         I'm a 3rd year Data Science student at the University of Florida, passionate about leveraging data to solve real-world problems. I have a strong foundation in statistics, data pipelines, and data visualization, and I'm always eager to learn more by working with Big Data.
       </p>
       <p className="text-lg text-gray-600 text-center md:text-left">
-        My interests include running, cooking, and as niche as it sounds, I love to listen to Bloomberg Tech, JOMO podcasts, and TechStack about the latest in data science and technology. I also enjoy exploring new technologies and applying them to practical projects.
+        My interests include running, trying Korean recipes, and traveling. After my 1st year in college, I studied and interned abroad in Singapore. It was some of the best months of my life being in a foreign country, challenged with new culture, and explore what it is like to live in a well planned urban city.  
       </p>
       <p className="text-lg text-gray-600 text-center md:text-left mt-4">
-        Feel free to connect with me on LinkedIn or GitHub, or reach out via email if you'd like to connect!
+        I am actively learning as a Data Science, a curious Finance nerd, and data storytelling enthusiast! Please send me a message on LinkedIn, I'd happy to chat.
       </p>
     </div>
   </section>
