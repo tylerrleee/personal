@@ -3,7 +3,7 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 
 // ——— images ———
-import nycsales   from '../assets/propertysales.png';
+import nycsales   from '../assets/nycproportion.png';
 import BSImage    from '../assets/blackscholes.png';
 import ticks      from '../assets/ticks.png';
 import duo        from '../assets/duolingo.jpeg';
@@ -71,7 +71,7 @@ const projects = [
   {
     img: sgflat,
     link: 'https://github.com/tylerrleee/SingaporeFlatsPrice-R',
-    title: 'Predicting Resale HDB Prices (Singapore)',
+    title: 'Predicting Resale Flat Prices',
     dateRange: 'Nov - Dec 2024',
     skills: [
       { name: 'R',        color: 'bg-sky-600'   },
