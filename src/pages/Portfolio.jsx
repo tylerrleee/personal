@@ -2,7 +2,7 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 
-// ——— images ———
+// images
 import nycsales   from '../assets/nycproportion.png';
 import BSImage    from '../assets/blackscholes.png';
 import ticks      from '../assets/ticks.png';
@@ -10,6 +10,9 @@ import duo        from '../assets/duolingo.jpeg';
 import sgflat     from '../assets/sgflats.png';
 import diabetes   from '../assets/diabetes.png';
 
+//  marketing 
+import basnews from '../assets/basnews.png'
+import vsomag from '../assets/vsomag.avif'
 // ——— project data tuned for the NEW ProjectCard API ———
 const projects = [
   {
@@ -96,20 +99,51 @@ const projects = [
   }
 ];
 
+
+const graphics = [
+  {
+    img: basnews,
+    link: 'https://singaporeblockchain.org/event/exclusive-bas-member-webinar-gitex-europe-2025/',
+    title: 'BASxGITEX campaign',
+    dateRange: 'Jun 2024',
+    skills: [
+    ],
+    description: 'Designed, and launched a email marketing campaign for BAS and GITEX Europe.'
+  },
+
+  {
+    img: vsomag,
+    link: 'https://www.ufvso.com/magazine',
+    title: 'VSO Magazine 24-25',
+    dateRange: 'January 2024',
+    skills: [
+    ],
+    description: 'Oversaw the Magazine team, over 250+ magazines were distributed. '
+  }
+];
+
 export default function Portfolio() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center "
-    style={{ background: '#FAF9F6' }}>
+    <section className="min-h-screen flex flex-col items-center py-20" style={{ background: '#FAF9F6' }}>
+      {/* Data Projects Section */}
       <h2 className="text-3xl font-bold mb-8 text-center text-blue-600">
-        My Data Projects
+        Data Projects
       </h2>
-
-      {/* responsive masonry-like grid */}
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 mb-16">
         {projects.map((proj) => (
           <ProjectCard key={proj.title} {...proj} />
         ))}
       </div>
+
+      {/* Marketing Materials Section */}
+      <h2 className="text-3xl font-bold mb-8 text-center text-blue-600">
+        Marketing Materials
+      </h2>
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+        {graphics.map((grap) => (
+          <ProjectCard key={grap.title} {...grap} />
+        ))}
+      </div>
     </section>
   );
-}
+};

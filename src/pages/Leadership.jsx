@@ -19,7 +19,7 @@ const leadershipRoles = [
     period: "2023 - Present",
     description: "I collaborate with a team of 20+ officers, managing over $40k+ annual budget, and donate our profit to a chosen philanthropy every year. Last year, we donated $3,200 to the Vietnam Health Clinics,\n We organize social events, host professional workshops, and educate Vietnamese culture for our 100+ active members. Our biggest endeavor is hosting a Mid Autuum and Lunar New Year show every year, which attracts 820+ confirmed attendees. \n Awarded as the 'Most Outstanding VSA in the Nation 2024-2025' ",
     image: vsoImg,
-    link: 'https://www.instagram.com/ufvso/'
+    link: 'https://www.youtube.com/@ufvso5874'
   },
   /*
   {
